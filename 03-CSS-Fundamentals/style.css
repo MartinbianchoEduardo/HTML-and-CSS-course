@@ -6,10 +6,10 @@ body {
   background-color: #e7e7e7;
   padding: 10px 10px;
 }
-
 .container {
-  width: 900px;
+  width: 600px;
   margin: 0 auto;
+  position: relative;
 }
 
 h1,
@@ -33,11 +33,26 @@ h1 {
   text-transform: uppercase;
   font-style: italic;
   margin: 0 0;
+  text-align: center;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 3px 8px;
+  position: absolute;
+  right: -15px;
+  bottom: 0;
 }
 
 h2 {
   font-size: 40px;
   margin-bottom: 20px;
+  position: relative;
+  text-align: center;
 }
 
 h3 {
@@ -59,6 +74,11 @@ p {
 
 nav {
   font-size: 18px;
+  text-align: center;
+}
+
+nav a:link {
+  margin: 5px;
 }
 
 ul {
@@ -84,7 +104,6 @@ li:last-child {
   background-color: #73946560;
   padding: 20px;
   margin-bottom: 20px;
-  height: 70px;
 }
 
 .post-header {
@@ -110,6 +129,10 @@ li:last-child {
 .related {
   list-style: none;
   /* text-align: center; */
+}
+
+.related a:nth-child(2) {
+  font-weight: normal;
 }
 
 aside {
@@ -160,4 +183,24 @@ a:active {
 
 article {
   margin-bottom: 50px;
+}
+
+.like {
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  border: 2px solid #739465;
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.like:hover {
+  background-color: #739465;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 6px;
 }
