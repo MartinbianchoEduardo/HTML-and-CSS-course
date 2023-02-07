@@ -6,7 +6,7 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
-/* main color: #0ea5e9 #0284c7
+/* main color: #0284c7
    gray color: #374151
 */
 
@@ -32,13 +32,14 @@ body {
 
 header,
 section {
-  margin-bottom: 48px;
+  margin-bottom: 96px;
 }
 
 h2 {
   margin-bottom: 48px;
   font-size: 36px;
   letter-spacing: -0.5px;
+  text-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
 }
 
 .grid-3-cols {
@@ -55,11 +56,14 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
   font-weight: 700;
-  border-radius: 22px;
+  box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 100px;
 }
 
 .btn:hover {
-  background-color: #0ea5e9;
+  background-color: #0e93d1;
+  box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.32);
+  transition: 2s;
 }
 
 .btn--big {
@@ -81,7 +85,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 48px;
+  margin-top: 64px;
 }
 
 .header-text-box {
@@ -89,10 +93,11 @@ header {
 }
 
 h1 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
+  text-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
 }
 
 .header-text {
@@ -103,6 +108,17 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 12px;
+}
+
+.chair {
+  box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 /* FEATURES */
@@ -110,7 +126,7 @@ img {
   stroke: #0284c7;
   width: 32px;
   height: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .features-title {
@@ -126,8 +142,9 @@ img {
 /* TESTIMONIAL */
 .testimonial-section {
   background-color: #0284c7;
-  color: #fff;
+  color: #ecfeff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -147,9 +164,13 @@ img {
   line-height: 1.6;
 }
 
+.testimonial-author {
+  color: #cffafe;
+}
+
 /* CHAIRS */
 .chair-box {
-  padding: 24px;
+  padding: 32px;
 }
 
 h3 {
@@ -159,13 +180,13 @@ h3 {
 
 .chair-details {
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .chair-details li {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
   margin-bottom: 24px;
 }
 
@@ -183,6 +204,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  align-items: center;
 }
 
 footer {
