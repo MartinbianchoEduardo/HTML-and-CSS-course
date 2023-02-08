@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "inter", sans-serif; /*if the online font doesn't work, it will be sans-serif */
+  color: white;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      hsla(40, 2%, 32%, 0.5),
+      hsla(0, 0%, 29%, 0.5)
+    ),
+    url(hero.jpg);
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 900px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+nav a {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  text-decoration-line: none;
+  color: white;
+  margin-top: 20px;
+}
+
+h1 {
+  margin-bottom: 36px;
+
+  font-size: 50px;
+}
+
+.text {
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.content-container {
+  width: 900px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.inner-head-container {
+  width: 50%;
+}
+
+.btn {
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: #ff8c00;
+  border-radius: 10px;
+  border: none;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 36px;
+}
+
+section {
+  color: #374151;
+}
