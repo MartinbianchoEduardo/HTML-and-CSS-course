@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "inter", sans-serif; /*if the online font doesn't work, it will be sans-serif */
+  color: #374151;
+}
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  box-shadow: 0 0 32px hsla(0, 0%, 0%, 0.1);
+  line-height: 1.7;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 24px;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+
+.open {
+  border-top: 4px solid #0284c7;
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.open .text,
+.number {
+  color: #0284c7;
+}
+
+.text,
+.number {
+  color: #37415185;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.icon {
+  height: 22px;
+  align-self: center;
+}
+
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+
+.hidden-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.main-text {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+ul {
+  color: #37415185;
+  font-size: 14px;
+  margin-left: 16px;
+}
